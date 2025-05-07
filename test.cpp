@@ -2,22 +2,7 @@
 #include<iostream>
 using namespace std;
 
-void encrypt (string str , int key)
-{
-  for (int i = 0 ; i < str.length() ; i++)
-  {
-    str[i] += key ;
-    if (0 <= str[i] <= 32)
-    {
-      int num = str[i];
-      int add = 32 - num ;
-      str[i] += add ;
-    }
-    
-  }
-  cout<<"The encrypted massage is"<<endl;
-  cout<<str;
-}
+
 
 void decrypt (string str , int key)
 {
@@ -48,7 +33,7 @@ int main()
   
   if (op == 'e' || op == 'E')
   {
-    encrypt(str , key);
+    cout<<"hi";
   }
   else if (op == 'd' || op == 'D')
   {
